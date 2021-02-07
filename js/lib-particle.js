@@ -12,13 +12,13 @@ function init() {
   root.renderer.setPixelRatio(window.devicePixelRatio || 1);
   root.camera.position.set(0, 0, 60);
 
-  var width = 50;
-  var height = 30;
+  var width = 100;
+  var height = 50;
 
   var slide = new Slide(width, height, 'out');
 	var l1 = new THREE.ImageLoader();
 	l1.setCrossOrigin('Anonymous');
-	l1.load('../images/thumb-1920-532559.jpg', function(img) {
+	l1.load('../images/bievenidos .png', function(img) {
 	  slide.setImage(img);
 	})
   root.scene.add(slide);
@@ -26,7 +26,7 @@ function init() {
   var slide2 = new Slide(width, height, 'in');
   var l2 = new THREE.ImageLoader();
 	l2.setCrossOrigin('Anonymous');
-	l2.load('../images/thumb-1920-532559.jpg', function(img) {
+	l2.load('../images/By Jonatan Alexis Severo.png', function(img) {
 		slide2.setImage(img);
 	})
 	
